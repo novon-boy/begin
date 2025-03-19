@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>Audios</h1>
+    <p>Para por audios no site podemos usar um simples, <code>&lt;audio src="" controls&gt;&lt;/audio&gt;</code> mas é muito simples e caso o navegador não suporte o áudio não terá outras opções, para isso usamos o seguinte código</p>
+    <pre>
+        <code>
+            &lt;audio preload="" controls autoplay loop&gt;
+                &lt;source src="caminhoaudio.mp3" type="audio/mpeg"&gt;
+                &lt;source src="caminhodoaudio.ogg" type="audio/ogg"&gt;
+                &lt;source src="caminhoaudio.wav" type="audio/wav"&gt;
+                &lt;p&gt;Mensagem de erro ao tentar colocar o audio no site &lt;a href="caminhoaudio.mp3" download="audio.mp3" type:"audio/mpeg"&gt;mensagem para download&lt;/a&gt;&lt;/p&gt;
+            &lt;/audio&gt;
+        </code>
+    </pre>
+    <h2>preload=""</h2>
+    <dl>
+        <dt>metadata</dt>
+        <dd>vai carregar as principais informações do arquivo(tamanho, tempo, informações de direitos, etc)</dd>
+        <dt>none</dt>
+        <dd>Não vai carregar absolutamente nada até que o usuário clique no botão play ou o script inicie a reprodução</dd>
+        <dt>auto</dt>
+        <dd>padrão, vai carregar o arquivo do áudio inteiro assim que a página for carregada, mesmo que o usuário nunca aperte o play</dd>
+    </dl>
+    <h2>controls, autoplay e loop</h2>
+    <dl>
+        <dt>controls</dt>
+        <dd>mostra os controles para controlar o áudio, botão de play, duração, etc</dd>
+        <dt>autoplay</dt>
+        <dd>reproduz o áudio assim que a aba é aberta, não funcionando hoje 13/03/2025</dd>
+        <dt>loop</dt>
+        <dd>Looping no áudio, toca o áudio repetidas vezes sem parar, a não ser que o usuário pause</dd>
+    </dl>
+    <h2>source src="" type=""</h2>
+    <dl>
+        <dt>source</dt>
+        <dd>Usado para dar várias opções de formatos de áudio caso algum não seja compátivel com o navegador</dd>
+        <dt>src=""</dt>
+        <dd>caminho do áudio</dd>
+        <dt>type=""</dt>
+        <dd>tipo do áudio</dd>
+    </dl>
+    <h2>o parágrafo no final</h2>
+    <p>criamos o paragrafo no final para exibir uma mensagem, no caso uma mensagem com um link para o download do audio em mp3, caso os nenhum source(nenhum áudio) seja compativel com o navegador</p>
+    <a href="pagina9.html" target="_self" rel="next">Ir para a página 9</a>
+</body>
+</html>

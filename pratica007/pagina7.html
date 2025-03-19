@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links de download</title>
+</head>
+<body>
+    <h1>Midias</h1>
+    <h2>Imagens flexíveis</h2>
+    <p>Após criar imagens de tamanho de 1000x1000, 700x700, e 300x300, usaremos para criar imagens flexiveis para cada tipo de aparelho, usaremos esses tamanhos como exemplo, você que irá decidir como ficará o tamanho das imagens no seu site para cada aparelho. Enfim, aqui o código para por essas imagens em HTML:</p>
+    <pre>
+        <code>
+            &lt;picture&gt;
+                &lt;source media="(max-width=750px)" srcset="imagempequena.png" type="image/png"&gt;
+                &lt;source media="(max=width=1050px)" srcset="imagemmedia.png" type="image/png"&gt;
+                &lt;img src="imagemgrande.png" alt="imagemgrande"&gt;
+            &lt;/picture&gt;
+        </code>
+    </pre>
+    <dl>
+        <dt>media="(max-width=)"</dt>
+        <dd>Define o máximo de pixel que a imagem continuará exibindo na tela, caso seja usado "min-width", será o contrário, este irá definir o minimo de pixels necessário para a imagem aparecer na tela</dd>
+        <dt>srcset=""</dt>
+        <dd>Imagem que será exibida se as condições do width forem cumprimdas</dd>
+        <dt>type=""</dt>
+        <dd>Tipo da imagem</dd>
+        <dt>img src="" ...</dt>
+        <dd>Imagem que será exibida como base, ou caso os outros dois sources não estiverem corretos, como por exemplo se a tela já estiver com 1200px</dd>
+    </dl>
+    <a href="pagina8.html" target="_self" rel="next">Ir para a página 8</a>
+</body>
+</html>

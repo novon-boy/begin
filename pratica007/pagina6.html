@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e âncoras</title>
+</head>
+<body>
+    <h1>Âncoras</h1>
+    <p>Para criar uma âncora usamos a tag &lt;a href="" hrefland="" target=""&gt;texto&lt;/a&gt;</p>
+    <dl>
+        <dt>herf=""</dt>
+        <dd>É onde estára o caminho ou URL para a âncora</dd>
+        <dt>hreflang=""</dt>
+        <dd>Permite indicar qual é o idioma principal do site que estamos ancorando/ligando</dd>
+        <dt>Target=""</dt>
+        <dd>Atributo que permite a opção de abrir o site da ancora em outra aba, possui os seguintes valores</dd> 
+        <dt>_blank</dt>
+        <dd>Vai abrir o link em uma nova janela em branco</dd>
+        <dt>_self</dt>
+        <dd>Vai abrir o link na janela ou frame atual(padrão)</dd>
+        <dt>_top</dt>
+        <dd>Vai desfazer todos os frames e abrir o destino no navegador completo</dd>
+        <dt>_parent</dt>
+        <dd>Similar ao uso do _top em uma referência a janela mãe</dd>
+        <dt>nome-do-frame</dt>
+        <dd>Caso esteja usando frames indica o nome da janela ao abrir</dd>
+    </dl>
+    <h2>Esse link é seu ou dos outros?</h2>
+    <p>Existe um recurso bem interessante para link que é indicar qual é a natureza do destino usando o atributo <em>rel</em>, esse atributo aceita vários valores, entre eles:</p>
+    <dl>
+        <dt>next</dt>
+        <dd>Indica que o link é a próxima parte do documento atual</dd>
+        <dt>prev</dt>
+        <dd>Indica que o link é a parte anterior do documento atual</dd>
+        <dt>author</dt>
+        <dd>indica que o link é para o site do autor do artigo atual</dd>
+        <dt>external</dt>
+        <dd>Indica que é um link para outro site que não faz parte do site atual</dd>
+        <dt>nofollow</dt>
+        <dd>Indica que o link é para um site não endossado, como um link pago</dd>
+    </dl>
+    <h2>Links para download</h2>
+    <p>Para fazer um link para download de arquivo em PDF ou ZIP, por exemplo, usamos a seguinte tag:</p>
+    <pre>
+        <code>
+            &lt;a href="caminhodoarquivol.pdf" download="arquivo1.pdf" type="application/pdf"&gt;mensagem&lt;/a&gt; 
+        </code>
+    </pre>
+    <h3>Media types usados no cotidiano</h3>
+    <ul>
+        <li>application/zip</li>
+        <li>text/html</li>
+        <li>text/css</li>
+        <li>text/javascript</li>
+        <li>video/mp4</li>
+        <li>video/H264</li>
+        <li>video/JPEG</li>
+        <li>audio/aac</li>
+        <li>audio/mpeg</li>
+        <li>font/ttf</li>
+        <li>image/jpeg</li>
+        <li>image/png</li>
+    </ul>
+    <a href="pagina7.html" target="_self" rel="next">Ir para a página 7</a>
+</body>
+</html>

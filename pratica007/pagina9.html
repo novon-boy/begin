@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>Videos</h1>
+    <p>Para inserir um vídeo usamos o seguinte código</p>
+    <pre>
+        <code>
+            &lt;video width="500" poster="thumbnail.jpeg" controls autoplay&gt;
+                &lt;source src="caminhovideo.webm" type="video/webm"&gt;
+                &lt;source src="caminhovideo.mp4" type="video/mp4"&gt;
+                &lt;source src="caminhovideo.ogv" type="video/ogg"&gt;
+                &lt;p&gt;Mensagem de erro com compatibilidade do navegador &lt;a href="caminhovideo.mp4" download="video.mp4" type="video/mp4"&gt;mensagem de download&lt;/a&gt;
+            &lt;video&gt;
+        </code>
+    </pre>
+    <dl>
+        <dt>widht=""</dt>
+        <dd>largura que o vídeo vai aparecer na tela</dd>
+        <dt>poster=""</dt>
+        <dd>a thumbnail do vídeo, a capa que aparece antes do vídeo ser reproduzido</dd>
+        <dt>controls</dt>
+        <dd>controle do vídeo, botão de play, duração, etc</dd>
+        <dt>autoplay</dt>
+        <dd>Inicia o vídeo assim que a página é aberta</dd>
+    </dl>
+    <h2>Hospedar meus próprios vídeos pode ser caro</h2>
+    <p>Será caro pois um vídeo por mais curto que seja, e por mais que sua qualidade seja péssima, ele ainda é um arquivo pesado, onde num site com muitos acessos, ou até mesmo apenas 1000 acessos por dia, já é o suficiente para dar muito mais de 1gb de tráfego, isso considerando um arquivo MUITO PEQUENO, coisa que seria praticamente impossível.</p>
+    <p>Para resolver este problema hospedamos vídeos externos, onde não será consumido da nossa hospedagem, e sim da hospedagem do site que nós pegamos o vídeo, exemplo de hospedagem de um vídeo do youtube, e do vimeo:</p>
+    <pre>
+        <code>
+            &lt;iframe width="560" height="315" src="https://www.youtube.
+            com/embed/AcChx2VOPWA?si=JyQpXhlxQRlU-jpY" title="YouTube video 
+            player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; 
+            picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen&gt;&lt;/iframe&gt;
+        </code>
+    </pre>
+    <pre>
+        <code>
+            &lt;iframe title="vimeo-player" src="https://player.vimeo.com/
+            video/1064933612?h=4c94ad8978" width="640" height="360" 
+            frameborder="0"    allowfullscreen&gt;&lt;/iframe&gt;
+        </code>
+    </pre>
+    <p>Para mudar a altura do vídeo e a largura, devo ir no atributo width e no height para mudar, basta modificar pelo número que eu quero; assim como foi usado no width do vídeo hospedado localmente, a diferença aqui é que não há o px, mas isso é algo bem instintivo então não há o que falar sobre</p>
+    <p>Podemos pegar esses códigos, simplesmente indo em compartilhar, incorporar, e copiar o código, e pronto, basta colar no arquivo html, e o vídeo aparecerá no meu site, meu estando hospedado em outro</p>
+    <p>Colocar vídeos assim no meu site é ótimo, pois não terei gastos com o tráfego, já que o vídeo está hospedado em outro servidor. Devo tormar cuidado ao fazer isso pois há direitos autorais, então devo sempre consultar antes</p>
+</body>
+</html>
