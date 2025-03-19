@@ -8,5 +8,5 @@
 </ul>
 <h2>Escolar</h2>
 <ul>
-  <li><a href="https://novon-boy.github.io/begin/pratica010/index.html></li>
+  <li><a href="https://novon-boy.github.io/begin/pratica010/index.html>Indice das matérias</a></li>
 </ul>
