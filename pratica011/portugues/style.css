@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
+body{
+    background-color: #29383C;
+}
+
+header{
+    background-image: linear-gradient(to left, orange, #A6672D, #664D35);
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 8px;
+}
+
+header > h1{
+    font-family: Tektur, Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(236, 236, 126), transparent);
+    border-style: groove;
+    margin: 10px 0px -20px 0px;
+    font-size: 3em;
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.548);
+    padding: 5px;
+}
+
+nav{
+    margin: 40px 0px -26px 0px;
+}
+
+nav > a{
+    color: #f8f5f1;
+    padding: 8px;
+    text-decoration: none;
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.548);
+    line-height: 50px;
+}
+
+nav > a:hover{
+    background-color: yellow;
+    text-decoration: underline;
+    color: #A0764F;
+    border-radius: 3px;
+}
+
+
+a{
+    color: blue;
+}
+
+main{
+    background-image: linear-gradient(to left, orange, #A6672D);
+    max-width: 750px;
+    padding: 30px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 8px;
+}
+
+main h2{
+    font-family: Tektur, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, rgb(236, 192, 126), transparent);
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.548);
+    border-style: inset;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
